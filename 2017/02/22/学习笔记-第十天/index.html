@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="字符串(String)
+特点：
+一旦被赋值就不能改变。(说的是值不能改变，而不是引用不能改变)
+
+
+
+
+常用方法：
+int length()：获取字符串中字符的个数（长度）。
+char charAt(int index)：根据位置获取字符。
+int indexOf(int char)：根据字符获取在字符串中的第一次出现的位置。
+int indexOf(int char，int fromIndex)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2017/02/22/学习笔记-第十天/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="字符串(String)
+特点：
+一旦被赋值就不能改变。(说的是值不能改变，而不是引用不能改变)
+
+
+
+
+常用方法：
+int length()：获取字符串中字符的个数（长度）。
+char charAt(int index)：根据位置获取字符。
+int indexOf(int char)：根据字符获取在字符串中的第一次出现的位置。
+int indexOf(int char，int fromIndex)">
+<meta property="og:updated_time" content="2017-02-22T12:47:19.573Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="字符串(String)
+特点：
+一旦被赋值就不能改变。(说的是值不能改变，而不是引用不能改变)
+
+
+
+
+常用方法：
+int length()：获取字符串中字符的个数（长度）。
+char charAt(int index)：根据位置获取字符。
+int indexOf(int char)：根据字符获取在字符串中的第一次出现的位置。
+int indexOf(int char，int fromIndex)">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-学习笔记-第十天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第十天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.975Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="字符串-String"><a href="#字符串-String" class="headerlink" title="字符串(String)"></a>字符串(String)</h1><ul>
+<li>特点：<ul>
+<li>一旦被赋值就不能改变。(说的是值不能改变，而不是引用不能改变)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>常用方法：<ul>
+<li><code>int length()</code>：获取字符串中字符的个数（长度）。</li>
+<li><code>char charAt(int index)</code>：根据位置获取字符。</li>
+<li><code>int indexOf(int char)</code>：根据字符获取在字符串中的第一次出现的位置。</li>
+<li><code>int indexOf(int char，int fromIndex)</code>：从指定位置进行ch的茶查找第一次出现的位置。</li>
+<li><code>int lastIndexOf(int char)</code>：根据字符获取在字符串中的最后一次出现的位置。</li>
+<li><code>String.subString(int beginIndex,int endIndex)</code>：获取字符串中的一部分字符串（包含begin，不包含end）。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>转换：<ul>
+<li>将字符串变成字符串数组（字符串的切割）：<code>String[] split(String regex)</code>。</li>
+<li><code>char[]</code> <code>toCharArray()</code>：将字符串转换为字符数组。</li>
+<li><code>byte[]</code> <code>getBytes()</code>：将字符串转换为字节数组。</li>
+<li><code>String.toUpperCase()</code>，<code>String.toLowerCase()</code>：将字符串转换为大小写。</li>
+<li><code>String replace(oldchar,newchar)</code>：将字符串进行替换。</li>
+<li><code>String trim()</code>：将字符串两端的空白去除。</li>
+<li><code>String concat(String)</code>：将字符串进行连接。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>判断：<ul>
+<li><code>boolean equals(Object obj)</code>：判断两个字符串的内容是否相同。</li>
+<li><code>boolean contains(string str)</code>：字符串是否包含指定字符串。</li>
+<li><code>boolean startsWith(string)</code>：字符串是否以指定字符串开头。</li>
+<li><code>boolean endsWith(string)</code>：字符串是否以指定字符串结尾。</li>
+</ul>
+</li>
+</ul>
+<h1 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h1><ul>
+<li>特点：<ul>
+<li>StringBuffer就是字符串缓冲区，用于存储数据的容器。</li>
+<li>长度可变。</li>
+<li>可以存储不同类型的数据。</li>
+<li>最终要转成字符串进行使用。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>功能：<ul>
+<li><code>StringBuffer append()</code>：添加。</li>
+<li><code>StringBuffer insert()</code>：插入。</li>
+<li><code>StringBuffer delete(start，end)</code>：删除。（含头，不含尾）</li>
+<li><code>StringBuffer delete(int index)</code>:删除指定位置的元素。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>StringBuffer与StringBuilder的区别：<ul>
+<li>StringBuffer是线程同步的。通常用于多线程。</li>
+<li>StringBuilder是线程不同步的。通常用于单线程。</li>
+</ul>
+</li>
+</ul>
+<h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><ul>
+<li>概述：<ul>
+<li>用于存储对象的容器。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>特点：<ul>
+<li>集合的长度是可变的。</li>
+<li>集合中不可以存储基本数据类型值。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Collection<ul>
+<li>添加：<code>boolean add(Object obj)</code>，<code>boolean addAll(Collection coll)</code></li>
+<li>删除：<code>boolean remove(Object obj)</code>，<code>boolean remove(collection coll)</code>，<code>clear()</code></li>
+<li>判断：<code>boolean contains(Object obj)</code>，<code>boolean containsAll(Collection coll)</code>，<code>boolean isEmpty()</code>：判断集合中是否有元素。</li>
+<li>获取：<code>int size()</code>，<code>iterator()</code>：取出元素的方式（迭代器）</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>迭代器<ul>
+<li>概述：迭代器是一种对象，它能够遍历容器中的元素的数据类型，每个迭代器对象代表容器中的确定的地址。每一种容器都将其迭代器以嵌套的方式定义于内部。因此各种迭代器的接口相同，型号不同。</li>
+<li>功能：遍历类中的数据结构。</li>
+<li>注意：该对象必须依赖于具体容器，因为每一个容器的数据结构都不同。所有该迭代器对象时在容器中进行内部实现的。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>List</code>与<code>Set</code>的区别：<ul>
+<li><code>List</code>：有序（存入和取出的顺序一致），元素都有索引，元素可重复。</li>
+<li><code>Set</code>：元素不能重复，无序。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>List:<ul>
+<li>修改：<code>Object set(index,element)</code></li>
+<li>获取：<code>Object get(index)</code>，<code>int indexOf(Object)</code>，<code>int lastIndexOf(Object)</code>。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第十天/" data-id="cizh47jjb0008ect3e2p3461b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/02/22/学习笔记-第四天/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/02/22/学习笔记-第三天/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第二天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第八天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第一天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第五天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第四天/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

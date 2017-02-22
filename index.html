@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-学习笔记-第二天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第二天/" class="article-date">
+  <time datetime="2017-02-22T15:25:11.015Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h1><ul>
+<li>for和while的特点:<ul>
+<li>for和while可以互换.</li>
+<li>区别在于for为了循环而定义的变量在for循环结束就是在内存中释放。而while循环使用的变量在循环结束后还可以继续使用。</li>
+</ul>
+</li>
+<li>无限循环最简单的形式:<ul>
+<li><code>while(true){}</code></li>
+<li><code>for(;;){}</code></li>
+</ul>
+</li>
+<li>什么时候使用循环结果呢？<ul>
+<li>当对某些代码执行很多次时,使用循环结构完成。</li>
+<li>当对一个条件进行一次判断时,可以使用if语句。</li>
+<li>当对一个条件进行多次判断时，可以使用while语句。</li>
+</ul>
+</li>
+<li>注意：<ul>
+<li>在使用循环时，一定要明确哪些语句需要参与循环，哪些不需要。</li>
+<li>循环通常情况下，需要定义条件，需要控制次数。</li>
+</ul>
+</li>
+<li>嵌套<code>for</code>循环：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ForTest</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=<span class="number">9</span>;x++)&#123;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> y=<span class="number">1</span>;y&lt;=x;y++)&#123;</div><div class="line">			System.out.print(y+<span class="string">"*"</span>+x+<span class="string">"="</span>+y*x+<span class="string">" "</span>);</div><div class="line">		&#125;</div><div class="line">		System.out.println();</div><div class="line">	&#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="函数（function）"><a href="#函数（function）" class="headerlink" title="函数（function）"></a>函数（function）</h1><ul>
+<li>什么是函数？<ul>
+<li>函数就是定义在类中的具有特定功能的一段独立的小程序。</li>
+<li>函数也称为方法。</li>
+</ul>
+</li>
+<li>函数格式：<ul>
+<li>修饰符+返回值类型+函数名(参数)<code>{执行语句；return返回值;}</code></li>
+</ul>
+</li>
+<li>函数的特点：<ul>
+<li>定义函数可以将功能代码进行封装。</li>
+<li>便于对该功能进行复用。</li>
+<li>函数只有被调用才会被执行</li>
+<li>函数的出现提高了代码的复用性</li>
+</ul>
+</li>
+<li>注意：<ul>
+<li>函数中只能调用函数，不可以在函数内部定义函数。</li>
+<li>定义函数时，函数的结果应该返回给调用者，交由调用者处理。</li>
+</ul>
+</li>
+<li>函数的应用:</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FunctionTest</span> </span>&#123;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> max = getMax(<span class="number">5</span>,<span class="number">6</span>);</div><div class="line">	System.out.println(<span class="string">"max="</span>+max);</div><div class="line">&#125;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getMax</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</div><div class="line">	<span class="keyword">return</span> a&gt;b?a:b;   </div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="函数的重载（overload）"><a href="#函数的重载（overload）" class="headerlink" title="函数的重载（overload）"></a>函数的重载（overload）</h1><ul>
+<li>重载的概念：<ul>
+<li>在同一个类中，允许存在一个以上的同名函数，只要他们的参数个数或者参数类型不同即可。</li>
+</ul>
+</li>
+<li>重载的特点：<ul>
+<li>与返回值类型无关，只看参数列表。</li>
+</ul>
+</li>
+<li>重载的好处：<ul>
+<li>方便于阅读，优化了程序设计。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第二天/" data-id="cizh47jj30006ect3f3yyrofz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第八天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第八天/" class="article-date">
+  <time datetime="2017-02-22T15:25:11.005Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="包"><a href="#包" class="headerlink" title="包"></a>包</h1><ul>
+<li>概述：<ul>
+<li>对类文件进行管理。</li>
+<li>给类提供多层命名空间。</li>
+<li>写在程序文件的第一行。</li>
+<li>类名的全称是：包名.类名。</li>
+<li>包也是一种封装形式。</li>
+</ul>
+</li>
+</ul>
+<h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><ul>
+<li>进程：正在进行中的程序（直译）</li>
+</ul>
+<ul>
+<li>线程：就是进程中一个负责程序执行的控制单元（执行路径）。</li>
+</ul>
+<ul>
+<li>多线程：<ul>
+<li>一个程序中的多条执行路径，称之为多线程。一个进程中至少要有一个线程。开启多个线程就是为了同时运行多部分代码。每一个线程都有自己运行的内容，这个内容可以称为线程要执行的任务。</li>
+<li>多线程的好处：解决了多部分代码同时运行的问题。</li>
+<li>多线程的弊端：当多个线程共享数据时，线程切换会引起数据错误。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>多线程的创建方式：<ul>
+<li>方式1：<ul>
+<li>1.定义一个类继承<code>Thread</code>类、</li>
+<li>2.覆盖<code>Thread</code>类中的<code>run</code>方法。</li>
+<li>3.直接创建<code>Thread</code>的子类对象。</li>
+<li>4.调用<code>start()</code>开启线程并调用线程的任务<code>run()</code>执行。</li>
+</ul>
+</li>
+<li>可以通过<code>getname()</code>获得线程的名称。</li>
+<li>实例：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</div><div class="line"> <span class="comment">/**</span></div><div class="line">  * 创建线程的目的是为了开启一条执行路径，去运行指定的代码和其他代码实现同时运行。</div><div class="line">  * 而运行的指定代码就是这个执行路径的任务。</div><div class="line">  * jvm创建的主线程的任务定义在了主函数。</div><div class="line">  * run方法就是封装自定义线程运行任务的函数。</div><div class="line">  * run方法中定义的就是线程要运行的任务代码。</div><div class="line">  */</div><div class="line">	<span class="keyword">private</span> String name;</div><div class="line">	Demo(String name)&#123;</div><div class="line">		<span class="keyword">this</span>.name=name;</div><div class="line">	&#125;</div><div class="line">	 <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> x =<span class="number">0</span>;x&lt;<span class="number">10</span>;x++)&#123;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> y=-<span class="number">99</span>;y&lt;<span class="number">99</span>;y++)&#123;</div><div class="line">				System.out.println(name+<span class="string">"....x"</span>+x);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    	 Demo d1 = <span class="keyword">new</span> Demo(<span class="string">"张三"</span>);</div><div class="line">         Demo d2 = <span class="keyword">new</span> Demo(<span class="string">"李四"</span>);</div><div class="line">         d1.start();</div><div class="line">         d2.start();</div><div class="line">	&#125;       </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第八天/" data-id="cizh47jj50007ect3npticd19" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第一天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第一天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.998Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://bpic.588ku.com/element_origin_min_pic/17/01/12/89a55616b4e967b166bfcda3bd68133d.jpg" alt=""></p>
+<h1 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h1><ul>
+<li>位运算是直接对二进制进行运算.</li>
+<li>异或运算(<code>^</code>):<ul>
+<li>相同二进制位进行运算,结果是0.不相同二进制位运算结果是1.</li>
+</ul>
+</li>
+<li>移位运算:<ul>
+<li>左移(<code>&lt;&lt;</code>):左移几位其实就是该数据乘以2的几次方. </li>
+<li>右移(<code>&gt;&gt;</code>):右移几位就是该数据整除2的几次方.</li>
+</ul>
+</li>
+</ul>
+<h1 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h1><p>###if语句与switch语句的应用与区别:</p>
+<p><strong>if:</strong></p>
+<ol>
+<li>对具体的值进行判断。</li>
+<li>对区间判断。</li>
+<li>对运算结果是<code>boolean</code>类型的表达式进行判断。</li>
+</ol>
+<p><strong>switch:</strong></p>
+<ol>
+<li>对具体的值进行判断。</li>
+<li>值的个数通常是固定的。对于几个固定的值判断,建议使用switch语句,因为switch语句会将具体的答案都加载进内存。效率相对高一点。</li>
+</ol>
+<h1 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h1><p>代表语句:<code>while</code>,<code>do while</code>,<code>for</code>。</p>
+<p><code>do while</code>的特点:条件无论是否满足,循环体至少执行一次.  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第一天/" data-id="cizh47jhz0000ect3v56r7edj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第五天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第五天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.990Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><ul>
+<li>什么是继承？<ul>
+<li>子类继承父类的特征和行为，使得子类具有父类的各种属性和方法。或子类从父类继承方法，使得子类具有父类相同的行为。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>继承的特点：<ul>
+<li>在继承关系中，父类更通用、子类更具体。父类具有更一般的特征和行为，而子类除了具有父类的特征和行为，还具有一些自己特殊的特征和行为。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>继承的好处：<ul>
+<li>提高了代码的复用性。</li>
+<li>让类与类之间产生了关系，给第三个特征多态提供了前提。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>单继承：<ul>
+<li>一个子类只能有一个直接父类。</li>
+</ul>
+</li>
+<li>多继承：<ul>
+<li>一个子类可以有多个直接父类，但不直接支持。因为多个父类中有相同成员，会产生调用不确定性。在java中是通过”多实现”的方式来体现的。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>当使用一个继承体系时：<ul>
+<li>查看该体系中的顶层类，了解该体系的基本功能。</li>
+<li>创建体系中的最子类对象，完成功能的使用。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>当子父类中出现成员函数一模一样的情况时，会运行子类的函数。这种现象称为覆盖。</li>
+</ul>
+<ul>
+<li>覆盖注意事项：<ul>
+<li>子类方法覆盖父类方法时，子类权限必须要大于等于父类权限。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>在子类构造对象，访问子类构造函数时，父类也运行了。<ul>
+<li>原因：在子类的构造函数中有一个默认的隐式语句。<code>super();</code></li>
+<li>子类实例化过程：子类中所有的构造函数默认都会访问父类中的空参数的构造函数。</li>
+<li>如果父类中没有定义空参数构造函数，那么子类的构造函数必须用<code>super</code>明确调用父类中哪个构造函数。同时子类构造函数中如果使用<code>this</code>调用了本类构造函数时，那么<code>super</code>就没有了，因为<code>super</code>和<code>this</code>都只能定义在第一行，所以只能有一个。但是可以保证的是，子类中肯定会有其他的构造函数访问父类的构造函数。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Fu2</span> </span>&#123;</div><div class="line">      Fu2()&#123;</div><div class="line">    	  System.out.println(<span class="string">"A"</span>);</div><div class="line">      &#125;</div><div class="line">      Fu2(<span class="keyword">int</span> x)&#123;h</div><div class="line">    	  System.out.println(<span class="string">"B"</span>+x);</div><div class="line">      &#125;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Zi2</span> <span class="keyword">extends</span> <span class="title">Fu2</span></span>&#123;</div><div class="line">	Zi2()&#123;</div><div class="line">        <span class="comment">//super();//调用的就是父类中的空参数的构造函数。</span></div><div class="line">		System.out.println(<span class="string">"C"</span>);</div><div class="line">	&#125;</div><div class="line">	Zi2(<span class="keyword">int</span> x)&#123;</div><div class="line">		System.out.println(<span class="string">"D"</span>+x);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Zi2 zi = <span class="keyword">new</span> Zi2(<span class="number">25</span>);   	 </div><div class="line">	&#125;       </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="final关键字"><a href="#final关键字" class="headerlink" title="final关键字"></a>final关键字</h1><ul>
+<li>final关键字的特点：<ul>
+<li>final是一个修饰符，可以修饰类，方法，变量。</li>
+<li>final修饰的类不可以被继承。</li>
+<li>final修饰的方法不可以被覆盖。</li>
+<li>final修饰的变量是一个常量，只能赋值一次。</li>
+</ul>
+</li>
+</ul>
+<h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><ul>
+<li>特点：<ul>
+<li>方法只有声明没有实现，该方法就是抽象方法，需要被abstract修饰。抽象方法必须定义在抽象方法中，该类必须也被abstract修饰。</li>
+<li>抽象类不可以被实例化。因为调用抽象方法没意义。</li>
+<li>抽象类必须有其子类覆盖了所有的抽象方法后，该子类才可以实例化。否则，这个子类还是抽象类。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>接口和抽象类的区别：<ul>
+<li>相同点：都是不断向上抽取而来的。</li>
+<li>不同点：1，抽象类需要被继承，而且只能被单继承。接口需要被实现，而且可以多实现。2，抽象类中可以定义抽象方法和非抽象方法，子类继承后，可以直接使用非抽象方法。3，抽象类的继承，是<code>is a</code>关系，在定义该体系的基本共性内容。接口的实现是<code>like a</code>关系，在定义体系额外功能。</li>
+</ul>
+</li>
+</ul>
+<h1 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h1><ul>
+<li>多态的定义：<ul>
+<li>指允许不同类的对象对同一消息做出响应。即同一消息可以根据发送对象的不同而采用多种不同的行为方式。（发送消息就是函数调用）</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>实现多态的技术称为：动态绑定，是指在执行期间判断所引用对象的实际类型，根据其实际类型调用其相应的方法。</li>
+</ul>
+<ul>
+<li>多态的作用：<ul>
+<li>消除类型之间的耦合性。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>多态存在的三个必要条件：<ul>
+<li>要有继承</li>
+<li>要有重写</li>
+<li>父类引用指向子类对象。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>多态的好处：<ul>
+<li>可替换性。多态对已存在的代码具有可替换性。</li>
+<li>可扩充性。多态对代码具有可扩充性。增加新的子类不影响已存在类的多态性。</li>
+<li>接口性。多态是通过方法签名，向子类提供了一个公共接口，由子类来完善或覆盖它而实现。</li>
+<li>灵活性。它在应用中体现了灵活多样的操作，提高了使用的效率。</li>
+<li>简化性。多态简化对应用软件的代码编写和修改过程。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第五天/" data-id="cizh47jiq0005ect3yvkak5as" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第四天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第四天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.981Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="面向对象-Object-Oriented）"><a href="#面向对象-Object-Oriented）" class="headerlink" title="面向对象(Object-Oriented）"></a>面向对象(Object-Oriented）</h1><ul>
+<li>什么是面向对象？<ul>
+<li>把数据及对数据的操作方法放在一起，作为一个相互依存的整体——对象。对同类对象抽象出其共性，形成类。类中的大多数数据，只能用本类的方法进行处理。类通过一个简单的外部接口与外界发生关系，对象与对象之间通过消息进行通信。程序流程由用户在使用中决定。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>类与对象之间的关系：<ul>
+<li>类：事物的描述。</li>
+<li>对象：该类事物的实例。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>定义类其实就是定义类中的成员。<br>*　成员：成员变量＜－－＞属性　成员函数＜－－＞行为。</li>
+</ul>
+<ul>
+<li>成员变量和局部变量的区别：<ul>
+<li>成员变量定义在类中，整个类中都可以访问。</li>
+<li>局部变量定义在函数，语句，局部代码块中，只在所属的区域有效。</li>
+<li>成员变量存在于堆内存的对象中。</li>
+<li>局部变量存在于栈内的方法中。</li>
+<li>成员变量随着对象的创建而存在，随着对象的消失而消失。</li>
+<li>局部变量随着所属区域的执行而存在，随着所属区域的结束而释放。</li>
+<li>成员变量都有默认初始化值。</li>
+<li>局部变量没有默认初始化值。</li>
+</ul>
+</li>
+</ul>
+<h1 id="封装（Encapsulation）"><a href="#封装（Encapsulation）" class="headerlink" title="封装（Encapsulation）"></a>封装（Encapsulation）</h1><ul>
+<li>封装是指隐藏对象的属性和实现细节，仅对外提供公共访问方式。</li>
+</ul>
+<ul>
+<li>好处：<ul>
+<li>将变化隔离。</li>
+<li>便于使用。</li>
+<li>提高重用性。</li>
+<li>提高安全性。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>封装的原则：<ul>
+<li>将不需要对外提供的内容都隐藏起来。</li>
+<li>把属性都隐藏，提供公共方法对其访问。</li>
+</ul>
+</li>
+</ul>
+<h1 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h1><ul>
+<li>特点：<ul>
+<li>函数名与类名相同</li>
+<li>不用定义返回值类型</li>
+<li>没有具体的返回值。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>作用：<ul>
+<li>给对象进行初始化。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>注意：<ul>
+<li>默认构造函数的特点。</li>
+<li>多个构造函数是以重载的形式存在的。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>一般函数和构造函数的区别：<ul>
+<li>构造函数：对象创建时，就会调用与之对应的构造函数，对对象进行初始化。</li>
+<li>一般函数：对象创建后，需要函数功能时才调用。</li>
+</ul>
+</li>
+</ul>
+<h1 id="this关键字"><a href="#this关键字" class="headerlink" title="this关键字"></a>this关键字</h1><ul>
+<li>特点：<ul>
+<li>this代表其所在函数所属对象的引用。换言之：this代本类对象的引用。</li>
+<li>当在函数内需要用到调用该函数的对象时，用this。</li>
+</ul>
+</li>
+</ul>
+<h1 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h1><ul>
+<li>特点：<ul>
+<li>static是一个修饰符，用于修饰成员和函数。</li>
+<li>static修饰的成员被所有对象所共享。</li>
+<li>static成员随着类的加载而加载。</li>
+<li>static修饰的成员可以被类名所调用。</li>
+<li>static修饰的数据是共享数据，对象中存储的是特有数据。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>静态使用的注意事项：<ul>
+<li>静态方法只能访问静态成员。(非静态既可以访问静态，又可以访问非静态)</li>
+<li>静态方法中不可以使用this或者super关键字。</li>
+<li>主函数是静态的。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第四天/" data-id="cizh47jjf000aect3a3qudcae" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第十天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第十天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.975Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="字符串-String"><a href="#字符串-String" class="headerlink" title="字符串(String)"></a>字符串(String)</h1><ul>
+<li>特点：<ul>
+<li>一旦被赋值就不能改变。(说的是值不能改变，而不是引用不能改变)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>常用方法：<ul>
+<li><code>int length()</code>：获取字符串中字符的个数（长度）。</li>
+<li><code>char charAt(int index)</code>：根据位置获取字符。</li>
+<li><code>int indexOf(int char)</code>：根据字符获取在字符串中的第一次出现的位置。</li>
+<li><code>int indexOf(int char，int fromIndex)</code>：从指定位置进行ch的茶查找第一次出现的位置。</li>
+<li><code>int lastIndexOf(int char)</code>：根据字符获取在字符串中的最后一次出现的位置。</li>
+<li><code>String.subString(int beginIndex,int endIndex)</code>：获取字符串中的一部分字符串（包含begin，不包含end）。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>转换：<ul>
+<li>将字符串变成字符串数组（字符串的切割）：<code>String[] split(String regex)</code>。</li>
+<li><code>char[]</code> <code>toCharArray()</code>：将字符串转换为字符数组。</li>
+<li><code>byte[]</code> <code>getBytes()</code>：将字符串转换为字节数组。</li>
+<li><code>String.toUpperCase()</code>，<code>String.toLowerCase()</code>：将字符串转换为大小写。</li>
+<li><code>String replace(oldchar,newchar)</code>：将字符串进行替换。</li>
+<li><code>String trim()</code>：将字符串两端的空白去除。</li>
+<li><code>String concat(String)</code>：将字符串进行连接。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>判断：<ul>
+<li><code>boolean equals(Object obj)</code>：判断两个字符串的内容是否相同。</li>
+<li><code>boolean contains(string str)</code>：字符串是否包含指定字符串。</li>
+<li><code>boolean startsWith(string)</code>：字符串是否以指定字符串开头。</li>
+<li><code>boolean endsWith(string)</code>：字符串是否以指定字符串结尾。</li>
+</ul>
+</li>
+</ul>
+<h1 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h1><ul>
+<li>特点：<ul>
+<li>StringBuffer就是字符串缓冲区，用于存储数据的容器。</li>
+<li>长度可变。</li>
+<li>可以存储不同类型的数据。</li>
+<li>最终要转成字符串进行使用。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>功能：<ul>
+<li><code>StringBuffer append()</code>：添加。</li>
+<li><code>StringBuffer insert()</code>：插入。</li>
+<li><code>StringBuffer delete(start，end)</code>：删除。（含头，不含尾）</li>
+<li><code>StringBuffer delete(int index)</code>:删除指定位置的元素。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>StringBuffer与StringBuilder的区别：<ul>
+<li>StringBuffer是线程同步的。通常用于多线程。</li>
+<li>StringBuilder是线程不同步的。通常用于单线程。</li>
+</ul>
+</li>
+</ul>
+<h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><ul>
+<li>概述：<ul>
+<li>用于存储对象的容器。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>特点：<ul>
+<li>集合的长度是可变的。</li>
+<li>集合中不可以存储基本数据类型值。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Collection<ul>
+<li>添加：<code>boolean add(Object obj)</code>，<code>boolean addAll(Collection coll)</code></li>
+<li>删除：<code>boolean remove(Object obj)</code>，<code>boolean remove(collection coll)</code>，<code>clear()</code></li>
+<li>判断：<code>boolean contains(Object obj)</code>，<code>boolean containsAll(Collection coll)</code>，<code>boolean isEmpty()</code>：判断集合中是否有元素。</li>
+<li>获取：<code>int size()</code>，<code>iterator()</code>：取出元素的方式（迭代器）</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>迭代器<ul>
+<li>概述：迭代器是一种对象，它能够遍历容器中的元素的数据类型，每个迭代器对象代表容器中的确定的地址。每一种容器都将其迭代器以嵌套的方式定义于内部。因此各种迭代器的接口相同，型号不同。</li>
+<li>功能：遍历类中的数据结构。</li>
+<li>注意：该对象必须依赖于具体容器，因为每一个容器的数据结构都不同。所有该迭代器对象时在容器中进行内部实现的。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>List</code>与<code>Set</code>的区别：<ul>
+<li><code>List</code>：有序（存入和取出的顺序一致），元素都有索引，元素可重复。</li>
+<li><code>Set</code>：元素不能重复，无序。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>List:<ul>
+<li>修改：<code>Object set(index,element)</code></li>
+<li>获取：<code>Object get(index)</code>，<code>int indexOf(Object)</code>，<code>int lastIndexOf(Object)</code>。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第十天/" data-id="cizh47jjb0008ect3e2p3461b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第三天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第三天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.963Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1487420911&amp;di=3b5c4fb82d416e788349d2a481e5787f&amp;imgtype=jpg&amp;er=1&amp;src=http%3A%2F%2Fimg01.taopic.com%2F140911%2F318755-1409110P55573.jpg" alt=""></p>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><ul>
+<li>数组的概念：<ul>
+<li>同一种类型数据的集合。</li>
+</ul>
+</li>
+<li>数组的好处：<ul>
+<li>可以自动给数组中的元素从0开始编号，方便操作这些元素。</li>
+</ul>
+</li>
+<li>数组的格式：<ul>
+<li>常规初始化格式：元素类型+<code>[]</code>+数组名 = 元素类型+<code>[]</code>+元素类型+<code>{元素，元素，...}</code>。</li>
+<li>静态初始化方式：元素类型+<code>[]</code>+数组名 = <code>{元素，元素，...}</code>。</li>
+</ul>
+</li>
+<li>栈内存：<ul>
+<li>存储的都是局部变量。而且变量所属的作用一旦结束，该变量就自动释放。</li>
+</ul>
+</li>
+<li>堆内存<ul>
+<li>存储的都是对象。凡是new建立的都在堆中。</li>
+</ul>
+</li>
+<li>堆内存的特点：<ul>
+<li>每一个实体都有首地址值。</li>
+<li>堆内存中的每一个变量都有默认初始化值，根据类型的不同而不同。</li>
+<li>垃圾回收机制。</li>
+</ul>
+</li>
+<li>数组中的常见问题：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//  int [] arr = new int [3];</span></div><div class="line"><span class="comment">//	System.out.println(arr[3]);//ArrayIndexOutOfBoundsException</span></div><div class="line">	<span class="comment">//当访问到数组中不存在的角标时，就会发生该异常。</span></div><div class="line">	</div><div class="line"><span class="comment">//	arr=null;</span></div><div class="line"><span class="comment">//	System.out.println(arr[0]);//NullPointerException</span></div><div class="line">	<span class="comment">//当引用型变量没有任何实体指向时，还在用其操作实体，就会发生该异常。</span></div></pre></td></tr></table></figure>
+<ul>
+<li>获取数组中的最大值：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayDemo2</span> </span>&#123;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span>[] arr = &#123;<span class="number">45</span>,<span class="number">60</span>,<span class="number">105</span>,<span class="number">89</span>,<span class="number">48</span>,<span class="number">58</span>&#125;;</div><div class="line">	<span class="keyword">int</span> max =getMax(arr);</div><div class="line">	System.out.println(<span class="string">"max="</span>+max);</div><div class="line">&#125;</div><div class="line">   <span class="function"><span class="keyword">public</span>  <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getMax</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</div><div class="line">	   <span class="keyword">int</span> max=arr[<span class="number">0</span>];</div><div class="line">	   <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</div><div class="line">		   <span class="keyword">if</span>(arr[i]&gt;max)&#123;</div><div class="line">			   max=arr[i];</div><div class="line">		   &#125;</div><div class="line">	   &#125;</div><div class="line">	   <span class="keyword">return</span> max;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>数组的排序：<ul>
+<li>选择排序：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayDemo3</span> </span>&#123;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">	   <span class="keyword">int</span>[] arr= &#123;<span class="number">5</span>,<span class="number">15</span>,<span class="number">20</span>,<span class="number">35</span>,<span class="number">108</span>,<span class="number">205</span>&#125;;</div><div class="line">	selectSort(arr);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</div><div class="line">		<span class="keyword">if</span>(i!=arr.length-<span class="number">1</span>)&#123;</div><div class="line">			System.out.print(arr[i]+<span class="string">","</span>);</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			System.out.print(arr[i]);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">selectSort</span><span class="params">(<span class="keyword">int</span>[]arr)</span></span>&#123;</div><div class="line">	   <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>;x&lt;arr.length-<span class="number">1</span>;x++)&#123;</div><div class="line">		   <span class="keyword">for</span>(<span class="keyword">int</span> y=x+<span class="number">1</span>;y&lt;arr.length;y++)&#123;</div><div class="line">			   <span class="keyword">if</span>(arr[x]&gt;arr[y])&#123;</div><div class="line">				   <span class="keyword">int</span> temp = arr[x];</div><div class="line">				   arr[x] = arr[y];</div><div class="line">				   arr[y] = temp;</div><div class="line">			   &#125;</div><div class="line">		   &#125;</div><div class="line">	   &#125;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第三天/" data-id="cizh47jie0003ect3pze8ddh6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第七天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第七天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.951Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><ul>
+<li>什么是异常？<ul>
+<li>指在运行期间发生的不正常情况。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>不正常情况分为两大类：<ul>
+<li>一般不可处理的。<code>Error</code></li>
+<li>可以处理的。 <code>Exception</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>Throwable</code>：无论是<code>Error</code>，还是异常，问题发生就可以抛出，让调用者知道并处理。该体系的特点就在于<code>Throwable</code>及其所有的子类都具有可抛性。</li>
+</ul>
+<ul>
+<li>异常的分类：<ul>
+<li>编译时被检测异常：只要是<code>Exception</code>和其子类都是，除了特殊子类<code>RuntimeException</code>体系。这种问题一旦出现，希望在编译时就进行检测，让这种问题有对应的处理方式。</li>
+<li>编译时不检测异常(运行是异常)：就是<code>Exception</code>中的<code>RuntimeException</code>和其子类。这种问题的发生，无法让功能继续，运算无法进行，更多是因为调用的原因导致的或者引发了内部状态的改变导致的。这种问题一般不处理，直接编译通过，在运行时，让调用者调用时的程序强制停止，让调用者对代码进行修正。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>throws</code>和<code>throw</code>的区别：<ul>
+<li><code>throws</code>使用在函数上。<code>throw</code>使用在函数内。</li>
+<li><code>throws</code>抛出的是异常类，可以抛出多个，用逗号隔开。<code>throw</code>抛出的是异常对象。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>异常捕捉<ul>
+<li>格式：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>&#123;</div><div class="line">      <span class="comment">//需要被检测异常的代码</span></div><div class="line">   &#125;<span class="keyword">catch</span>(异常类 变量)&#123;</div><div class="line">       <span class="comment">//处理异常的代码</span></div><div class="line">     &#125;<span class="keyword">finally</span>&#123;</div><div class="line">       <span class="comment">//一定会执行的代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>异常处理的原则：<ul>
+<li>函数内容如果抛出需要检测的异常，那么函数上必须要声明。否则必须在函数内用<code>trycatch</code>捕捉，否则编译失败。</li>
+<li>如果调用到了声明异常的函数，要么<code>trycatch</code>要么<code>throws</code>，否则编译失败。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第七天/" data-id="cizh47jia0002ect3d6hzejow" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第六天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第六天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.936Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h1><ul>
+<li>一个类的定义放在另一个类的内部，这个类就叫做内部类。</li>
+</ul>
+<ul>
+<li>内部类的特点：<ul>
+<li>内部类可以直接访问外部内中的成员。</li>
+<li>外部类要访问内部类，必须建立内部类的对象。</li>
+</ul>
+</li>
+</ul>
+<h1 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h1><ul>
+<li>作为外部类的一个成员存在，与外部类的属性、方法并列。</li>
+</ul>
+<ul>
+<li>特点：<ul>
+<li>内部类作为外部类的成员，可以访问外部类的私有成员或属性。（即使将外部类声明为PRIVATE，但是对于处于其内部的内部类还是可见的。）</li>
+<li>用内部类定义在外部类中不可访问的属性。这样就在外部类中实现了比外部类的private还要小的访问权限。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>实例：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">int</span> num =<span class="number">3</span>;</div><div class="line">    </div><div class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Inner</span></span>&#123;</div><div class="line">    	<span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</div><div class="line">    		System.out.println(<span class="string">"show run..."</span>+num);</div><div class="line">    	&#125;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</div><div class="line">    	Inner in = <span class="keyword">new</span> Inner();</div><div class="line">    	in.show();</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">       <span class="keyword">new</span> Outer().method();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h1><ul>
+<li>匿名内部类是一种特殊的局部内部类，它是通过匿名类实现接口。</li>
+</ul>
+<ul>
+<li>特点：<ul>
+<li>一个类用于继承其他类或是实现接口，并不需要增加额外的方法，只是对继承方法的事先或是覆盖。</li>
+<li>只是为了获得一个对象实例，不需要知道其实际类型。</li>
+<li>类名没有意义，也就是不需要使用到。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>实例：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Inter</span> </span>&#123;</div><div class="line">     <span class="function"><span class="keyword">public</span>  <span class="keyword">void</span> <span class="title">show1</span><span class="params">()</span></span>;</div><div class="line">     <span class="function"><span class="keyword">public</span>  <span class="keyword">void</span> <span class="title">show2</span><span class="params">()</span></span>;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Out</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</div><div class="line">			Inter in =<span class="keyword">new</span> Inter()&#123;</div><div class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show1</span><span class="params">()</span></span>&#123;</div><div class="line">				System.out.println(<span class="string">"show1 ....."</span>);</div><div class="line">			&#125;</div><div class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show2</span><span class="params">()</span></span>&#123;</div><div class="line">				System.out.println(<span class="string">"show2 ......"</span>);</div><div class="line">			&#125;</div><div class="line">		&#125;;</div><div class="line">		in.show1();</div><div class="line">		in.show2();</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">       <span class="keyword">new</span> Out().method();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第六天/" data-id="cizh47jjd0009ect3euh4la1k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习笔记-第九天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第九天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.653Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><ul>
+<li>多线程的第二种创建方式：<ul>
+<li>定义类实现Runnable接口。</li>
+<li>覆盖接口中的run方法，将线程的任务代码封装到run方法中，并将Runnable接口的子类对象作为Thread的类的构造函数的参数进行传递。</li>
+<li>通过Thread类创建线程对象。</li>
+<li>调用线程对象的start方法开启线程。</li>
+</ul>
+</li>
+<li>实例：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</div><div class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</div><div class="line">    	  show();</div><div class="line">      &#125;</div><div class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</div><div class="line">    	  <span class="keyword">for</span>(<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;<span class="number">20</span>;i++)&#123;</div><div class="line">    		  System.out.println(Thread.currentThread().getName()+<span class="string">"...."</span>+i);</div><div class="line">    	  &#125;</div><div class="line">      &#125;</div><div class="line">&#125; </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        	Demo d = <span class="keyword">new</span>  Demo();</div><div class="line">			Thread t1 = <span class="keyword">new</span> Thread(d);</div><div class="line">			Thread t2 = <span class="keyword">new</span> Thread(d);</div><div class="line">			t1.start();</div><div class="line">			t2.start();</div><div class="line">		&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>第二种线程创建方式的好处（实现Runnable接口的好处）：<ul>
+<li>将线程的任务从线程的子类中分离出来，进行了单独的分装。按照面向对象的思想将任务封装成对象。</li>
+<li>避免了java单继承的局限性。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>线程安全问题产生的原因：<ul>
+<li>多个线程在操作共享的数据。</li>
+<li>操作共享数据的线程代码有多条。</li>
+<li>当一个线程在执行操作共享数据的多条代码过程中，其他线程参与了运算。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>解决思路：<ul>
+<li>将多条操作共享数据的线程代码封装起来，当有线程在执行这些代码的时候，其他线程不可以参与运算。</li>
+<li>必须要当前线程把这些代码执行完毕后，其他线程才可以参与运算。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>解决办法：<ul>
+<li>使用同步代码块(<code>synchronized</code>)。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>同步代码块的格式：<ul>
+<li><code>synchronized(){需要被同步的代码}</code>。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>同步函数：<ul>
+<li>实例：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bank</span> </span>&#123;</div><div class="line">     <span class="keyword">private</span> <span class="keyword">int</span> sum;</div><div class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> num)</span></span>&#123;<span class="comment">//同步函数</span></div><div class="line">    	 sum =sum+num;</div><div class="line">    	 System.out.println(<span class="string">"sum="</span>+sum);</div><div class="line">     &#125;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cus</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</div><div class="line">	<span class="keyword">private</span> Bank b = <span class="keyword">new</span> Bank();</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;<span class="number">3</span>;i++)&#123;</div><div class="line">			b.add(<span class="number">100</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>多线程涉及的方法：<ul>
+<li><code>wait()</code>：让线程处于冻结状态，被wait的线程会被存储到线程池中。</li>
+<li><code>notify()</code>：唤醒线程中的（任意）一个线程。</li>
+<li><code>notifyAll()</code>：唤醒线程池中所有线程。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第九天/" data-id="cizh47jio0004ect3g3bzmhav" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
+  </nav>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第二天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第八天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第一天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第五天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第四天/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

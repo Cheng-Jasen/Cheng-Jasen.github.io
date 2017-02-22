@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="异常
+什么是异常？
+指在运行期间发生的不正常情况。
+
+
+
+
+不正常情况分为两大类：
+一般不可处理的。Error
+可以处理的。 Exception
+
+
+
+
+Throwable：无论是Error，还是异常，问题发生就可以抛出，让调用者知道并处理。该体系的特点就在于Throwable及其所有的子类都具有可抛性。
+
+
+异常的分类：
+编译时被检测异常：只要是Exception和其子类都是，除了特殊子类Run">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2017/02/22/学习笔记-第七天/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="异常
+什么是异常？
+指在运行期间发生的不正常情况。
+
+
+
+
+不正常情况分为两大类：
+一般不可处理的。Error
+可以处理的。 Exception
+
+
+
+
+Throwable：无论是Error，还是异常，问题发生就可以抛出，让调用者知道并处理。该体系的特点就在于Throwable及其所有的子类都具有可抛性。
+
+
+异常的分类：
+编译时被检测异常：只要是Exception和其子类都是，除了特殊子类Run">
+<meta property="og:updated_time" content="2017-02-17T17:32:54.929Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="异常
+什么是异常？
+指在运行期间发生的不正常情况。
+
+
+
+
+不正常情况分为两大类：
+一般不可处理的。Error
+可以处理的。 Exception
+
+
+
+
+Throwable：无论是Error，还是异常，问题发生就可以抛出，让调用者知道并处理。该体系的特点就在于Throwable及其所有的子类都具有可抛性。
+
+
+异常的分类：
+编译时被检测异常：只要是Exception和其子类都是，除了特殊子类Run">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-学习笔记-第七天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/22/学习笔记-第七天/" class="article-date">
+  <time datetime="2017-02-22T15:25:10.951Z" itemprop="datePublished">2017-02-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><ul>
+<li>什么是异常？<ul>
+<li>指在运行期间发生的不正常情况。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>不正常情况分为两大类：<ul>
+<li>一般不可处理的。<code>Error</code></li>
+<li>可以处理的。 <code>Exception</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>Throwable</code>：无论是<code>Error</code>，还是异常，问题发生就可以抛出，让调用者知道并处理。该体系的特点就在于<code>Throwable</code>及其所有的子类都具有可抛性。</li>
+</ul>
+<ul>
+<li>异常的分类：<ul>
+<li>编译时被检测异常：只要是<code>Exception</code>和其子类都是，除了特殊子类<code>RuntimeException</code>体系。这种问题一旦出现，希望在编译时就进行检测，让这种问题有对应的处理方式。</li>
+<li>编译时不检测异常(运行是异常)：就是<code>Exception</code>中的<code>RuntimeException</code>和其子类。这种问题的发生，无法让功能继续，运算无法进行，更多是因为调用的原因导致的或者引发了内部状态的改变导致的。这种问题一般不处理，直接编译通过，在运行时，让调用者调用时的程序强制停止，让调用者对代码进行修正。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>throws</code>和<code>throw</code>的区别：<ul>
+<li><code>throws</code>使用在函数上。<code>throw</code>使用在函数内。</li>
+<li><code>throws</code>抛出的是异常类，可以抛出多个，用逗号隔开。<code>throw</code>抛出的是异常对象。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>异常捕捉<ul>
+<li>格式：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>&#123;</div><div class="line">      <span class="comment">//需要被检测异常的代码</span></div><div class="line">   &#125;<span class="keyword">catch</span>(异常类 变量)&#123;</div><div class="line">       <span class="comment">//处理异常的代码</span></div><div class="line">     &#125;<span class="keyword">finally</span>&#123;</div><div class="line">       <span class="comment">//一定会执行的代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>异常处理的原则：<ul>
+<li>函数内容如果抛出需要检测的异常，那么函数上必须要声明。否则必须在函数内用<code>trycatch</code>捕捉，否则编译失败。</li>
+<li>如果调用到了声明异常的函数，要么<code>trycatch</code>要么<code>throws</code>，否则编译失败。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/22/学习笔记-第七天/" data-id="cizh47jia0002ect3d6hzejow" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/02/22/学习笔记-第三天/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/02/22/学习笔记-第六天/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第二天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第八天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第一天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第五天/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/22/学习笔记-第四天/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
